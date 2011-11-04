@@ -8,6 +8,8 @@ Everything is ugly. No refactorings. First try of MRI 1.9.3-p0.
 
 Nothing special. Nothing important. Just fun.
 
+**» [Video](http://youtu.be/QRZ1QBhIS9Y?hd=1) «**
+
 ## Why?
 
 Game of Life is fun. Read more: [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
