@@ -32,7 +32,7 @@ Take it, learn from it, make anything else with it.
 
 Don't blame me.
 
-![copyleft][http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/24px-Copyleft.svg.png]
+![copyleft](http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/24px-Copyleft.svg.png)
 
 ## Visit me!
 
