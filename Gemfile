@@ -6,3 +6,4 @@ gem "rspec", :require => false
 gem "pry"
 gem "pry-doc"
 
+gem "rake"

@@ -12,10 +12,10 @@ offx,offy = 54,24
   [offx+4,offy+3],[offx+5,offy+3],
   [offx+2,offy+4],[offx+3,offy+4],[offx+5,offy+4],
   [offx+1,offy+5],[offx+3,offy+5],[offx+5,offy+5]
-].each do |e|
-  board.spawn_cell e[0],e[1]
+].each do |x,y|
+  board.spawn_cell x,y
 end
 
                          # ✺ ☻ ⬣ ● ⨀
-board.iterate! 2500, ' ','⬤', 12
+board.iterate! 2500, ' ','●', 12
 

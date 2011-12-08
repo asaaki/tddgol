@@ -1,5 +1,8 @@
 # encoding: utf-8
-require "./gol"
+$LOAD_PATH << File.expand_path(__FILE__)
+$LOAD_PATH << File.join(File.expand_path(__FILE__),'spec')
+
+require "./gol.rb"
 require "rspec"
 
 describe Board do
@@ -12,6 +15,11 @@ describe Board do
     
     it "has a corresponding empty board matrix" do
       board.matrix.should == Matrix.zero(10,10)
+    end
+    
+    it "gets a cell status" do
+      board.cell(0,0).should == 0
+      board[0,0].should == 0
     end
   end
   
@@ -70,8 +78,8 @@ describe Board do
         board.spawn_cell(2,3)
         states = {:deaths => [[2,3]], :births => [[3,3]]}
         board.state_processor(states).should be_true
-        board.matrix[3,3].should == 1
-        board.matrix[2,3].should == 0
+        board[3,3].should == 1
+        board[2,3].should == 0
       end
     end
   end
@@ -123,15 +131,15 @@ describe Board do
     board.spawn_cell(3,3)
     board.spawn_cell(3,4)
     board.tick!    
-    board.matrix[2,3].should == 1
-    board.matrix[4,3].should == 1
-    board.matrix[3,2].should == 0
-    board.matrix[3,4].should == 0
+    board[2,3].should == 1
+    board[4,3].should == 1
+    board[3,2].should == 0
+    board[3,4].should == 0
     board.tick!    
-    board.matrix[2,3].should == 0
-    board.matrix[4,3].should == 0
-    board.matrix[3,2].should == 1
-    board.matrix[3,4].should == 1
+    board[2,3].should == 0
+    board[4,3].should == 0
+    board[3,2].should == 1
+    board[3,4].should == 1
     board.clock.should == 2
   end
   

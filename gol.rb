@@ -3,7 +3,9 @@
 ### http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 ###
 
-require "./init"
+require "rubygems"
+require "matrix"
+require "bundler/setup"
 
 class Board
   attr_accessor :dx, :dy, :matrix, :clock
@@ -18,6 +20,14 @@ class Board
     [@dx,@dy]
   end
   
+  def cell x,y
+    @matrix[y,x]
+  end
+  
+  def [] x,y
+    @matrix[y,x]
+  end
+
   def spawn_cell x, y
     if @matrix[y, x] == 0
       @matrix.send :[]=, y, x, 1
