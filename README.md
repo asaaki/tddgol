@@ -4,7 +4,7 @@ Finished in approx. 2 hours.
 
 All logic is tested. Only the ASCII output method is not, was only built to visualize the engine.
 
-Everything is ugly. No refactorings. First try of MRI 1.9.3-p0.
+Everything is ugly. No refactorings. First try of MRI 1.9.3-p0 (and code is strictly 1.9.3!).
 
 Nothing special. Nothing important. Just fun.
 
